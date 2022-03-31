@@ -1,8 +1,10 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
   font-size: 1.2rem;
+}
+body{
+  background-color: black;
 }
 .layout {
   height: 100vh;
@@ -61,4 +63,18 @@
 .botones:active {
   position: relative;
   top: 1px;
+}
+.fin{
+  font-size: 5rem;
+  text-align: center;
+}
+
+.animate__animated.animate__hinge {
+  --animate-delay: 2s;
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-delay: 10s;
+  --animate-duration: 2s;
 }
