@@ -24,7 +24,8 @@ class Historial extends Component {
         console.log("Render Historial");
         return(
             <div className='opciones'>
-                <p>Las opciones que elegiste fueron:</p>
+                <p>Tu selección anterior fue: {this.props.array.length<1? "": this.props.array[this.props.array.length-1]}</p>
+                <p>Las elecciones previas:</p>
                 <ul>
                     {this.props.array.map((e,i) => <li key={i}>{e}</li> )}
                 </ul>
